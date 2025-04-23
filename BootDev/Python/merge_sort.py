@@ -8,7 +8,7 @@ def merge_sort(nums):
     left_index = nums[0:middle_index]
     right_index = nums[middle_index:]
 
-    # Conquer: Revursively sort each half
+    # Conquer: Recursively sort each half
     sorted_left = merge_sort(left_index)
     sorted_right = merge_sort(right_index)
 
