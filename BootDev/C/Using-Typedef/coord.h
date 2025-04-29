@@ -1,6 +1,6 @@
 #pragma once
 
-typedef struct Coordinate { // Initiliaze typedef coordinate_t
+typedef struct Coordinate { // Initiliaze typedef coordinate_t (_t is required)
   int x;
   int y;
   int z;
