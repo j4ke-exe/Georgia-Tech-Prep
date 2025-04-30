@@ -5,7 +5,7 @@
 void format_object(snek_object_t obj, char *buffer) {
   switch (obj.kind) {
     case INTEGER:
-      sprintf(buffer, "int:%d", obj.data.v_int);
+      sprintf(buffer, "int:%d", obj.data.v_int); // https://cplusplus.com/reference/cstdio/sprintf/
       break;
     case STRING:
       sprintf(buffer, "string:%s", obj.data.v_string);
