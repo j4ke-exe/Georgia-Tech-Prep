@@ -29,7 +29,7 @@ int minimum(int a, int b) {
     return (a < b) ? a : b;
 }
 
-typedef struct EdgeDistances{
+typedef struct EdgeDistances {
     int top;
     int bottom;
     int left;
