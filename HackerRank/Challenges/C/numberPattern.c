@@ -44,7 +44,6 @@ int main() {
     
     for (int row = 0; row <= grid_size - 1; row++) {
         for (int column = 0; column <= grid_size - 1; column++) {
-            
             edge_t dist;
             dist.top = row;
             dist.bottom = (grid_size - 1) - row;
