@@ -54,8 +54,8 @@ int main() {
             int min_dist_hori = minimum(dist.left, dist.right);
             int min_dist = minimum(min_dist_vert, min_dist_hori);
             
-            int val_to_print = n - min_dist;
-            printf("%d ", val_to_print);
+            int result = n - min_dist;
+            printf("%d ", result);
         }
         printf("\n");
     }
