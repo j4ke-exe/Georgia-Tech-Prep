@@ -1,2 +1,2 @@
 # Georgia Tech Prep
-✏️ Random stuff I am doing to prep for OMS Cybersecurity (InfoSec).
+✏️ A collection of my work while prepping for Georgia Tech's MSCSEC - Information Security program.
