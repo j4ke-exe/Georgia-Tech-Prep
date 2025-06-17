@@ -5,46 +5,41 @@
 #include <stddef.h>
 
 // Object Types
-typedef enum
-{
-   INTEGER,
-   FLOAT,
-   STRING,
-   VECTOR3,
-   ARRAY
+typedef enum { 
+   INTEGER, 
+   FLOAT, 
+   STRING, 
+   VECTOR3, 
+   ARRAY 
 } object_type_t;
 
 // Forward Declaration
 typedef struct Object object_t;
 
 // 3D Vector
-typedef struct
-{
-   object_t *x;
-   object_t *y;
-   object_t *z;
+typedef struct {
+  object_t *x;
+  object_t *y;
+  object_t *z;
 } vector3_t;
 
 // Dynamic Array
-typedef struct
-{
-   size_t size;
-   object_t **items;
+typedef struct {
+  size_t size;
+  object_t **items;
 } array_t;
 
 // Object Structure
-struct Object
-{
-   object_type_t type;
-   int refcount;
-   union
-   {
-      int v_int;
-      float v_float;
-      char *v_string;
-      vector3_t v_vector3;
-      array_t v_array;
-   } data;
+struct Object {
+  object_type_t type;
+  int refcount;
+  union {
+    int v_int;
+    float v_float;
+    char *v_string;
+    vector3_t v_vector3;
+    array_t v_array;
+  } data;
 };
 
 // Constructors
